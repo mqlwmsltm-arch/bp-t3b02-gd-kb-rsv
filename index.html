@@ -1,199 +1,730 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>애니 매니아 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Noto+Sans+KR:wght@400;900&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: #0d0d0f;
-      color: #ebebeb;
-      font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif;
-      line-height: 1.6;
-      padding: 32px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공덕 노래방 예약 | 티원 노래방 공덕점</title>
+    <meta name="description" content="공덕 노래방 예약 전문 티원 노래방. 프리미엄 사운드 시스템과 완벽한 방음, 365일 24시간 운영. 공덕역 3번 출구 도보 1분. 지금 전화 예약하세요.">
+    <meta name="keywords" content="공덕노래방, 공덕노래방예약, 공덕가요방, 공덕코인노래방, 마포노래방, 티원노래방, 공덕역노래방">
+    <link rel="canonical" href="https://t3b02-gd-kb-rsv.pages.dev">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+
+    <!-- OG 메타 -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="공덕 노래방 예약 | 티원 노래방 공덕점">
+    <meta property="og:description" content="공덕 노래방 예약 전문 티원 노래방. 프리미엄 사운드 시스템과 완벽한 방음, 365일 24시간 운영. 지금 전화 예약하세요.">
+    <meta property="og:url" content="https://t3b02-gd-kb-rsv.pages.dev">
+    <meta property="og:site_name" content="티원 노래방 공덕점">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'%3E%3Crect width='1200' height='630' fill='%23000'/%3E%3Ctext x='60' y='380' font-family='Impact, sans-serif' font-size='80' fill='%23ff3b00'%3E공덕 노래방%3C/text%3E%3Ctext x='60' y='480' font-family='system-ui, sans-serif' font-size='36' fill='%23fff'%3ET1%3C/text%3E%3C/svg%3E">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="공덕 노래방 예약 | 티원 노래방 공덕점">
+    <meta name="twitter:description" content="공덕 노래방 예약 전문 티원 노래방. 프리미엄 사운드 시스템과 완벽한 방음, 365일 24시간 운영.">
+    <meta name="twitter:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'%3E%3Crect width='1200' height='630' fill='%23000'/%3E%3Ctext x='60' y='380' font-family='Impact, sans-serif' font-size='80' fill='%23ff3b00'%3E공덕 노래방%3C/text%3E%3Ctext x='60' y='480' font-family='system-ui, sans-serif' font-size='36' fill='%23fff'%3ET1%3C/text%3E%3C/svg%3E">
+
+    <!-- JSON-LD 스키마 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EntertainmentBusiness",
+        "name": "티원 노래방 공덕점",
+        "alternateName": "T1 노래방 공덕",
+        "description": "공덕역 3번 출구 도보 1분 거리의 프리미엄 노래방. 최신 음향 시스템과 완벽한 방음, 24시간 운영.",
+        "url": "https://t3b02-gd-kb-rsv.pages.dev",
+        "telephone": "010-6279-0862",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "서울특별시",
+            "addressRegion": "마포구",
+            "addressCountry": "KR"
+        },
+        "openingHours": "Mo-Su 00:00-23:59",
+        "priceRange": "₩₩",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "bestRating": "5",
+            "ratingCount": "247"
+        },
+        "sameAs": [
+            "https://t3b02-gd-kb-rsv.pages.dev"
+        ]
     }
-    .wrapper {
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 60px;
-    }
-    .brand {
-      font-size: 2rem;
-      font-weight: 900;
-      color: #ffffff;
-      text-decoration: none;
-      letter-spacing: -0.05em;
-    }
-    nav { display: flex; gap: 24px; }
-    nav a {
-      color: #888888;
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-    nav a:hover { color: #f43f5e; }
-    main { margin-bottom: 80px; }
-    .label {
-      font-size: 0.75rem;
-      font-family: monospace;
-      color: #f43f5e;
-      font-weight: bold;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-size: 3rem;
-      font-weight: 900;
-      line-height: 1.15;
-      letter-spacing: -0.04em;
-      color: #ffffff;
-      margin-bottom: 40px;
-    }
-    .article-body {
-      font-size: 1.15rem;
-      color: #cccccc;
-      font-weight: 400;
-      max-width: 780px;
-    }
-    .article-body p { margin-bottom: 24px; }
-    .juice-link {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 900;
-      box-shadow: inset 0 -6px 0 #f43f5e;
-      transition: all 0.15s ease-in-out;
-    }
-    .juice-link:hover {
-      box-shadow: inset 0 -24px 0 #f43f5e;
-      color: #ffffff;
-    }
-    .archive-section {
-      margin-top: 80px;
-    }
-    .section-title {
-      font-size: 1rem;
-      font-family: monospace;
-      color: #888888;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-bottom: 32px;
-    }
-    .archive-list {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .archive-card {
-      text-decoration: none;
-      color: #ffffff;
-      display: block;
-      border: 1px solid #1e293b;
-      padding: 32px;
-      transition: all 0.2s ease;
-    }
-    .archive-card:hover {
-      border-color: #f43f5e;
-      background-color: #0f172a;
-    }
-    .archive-card h3 {
-      font-size: 1.4rem;
-      font-weight: 900;
-      margin-bottom: 12px;
-      letter-spacing: -0.02em;
-    }
-    .archive-card p {
-      color: #888888;
-      font-size: 0.95rem;
-    }
-    footer {
-      border-top: 1px solid #1e293b;
-      padding-top: 32px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      font-family: monospace;
-      color: #475569;
-    }
-    footer a { color: #475569; text-decoration: none; }
-    footer a:hover { color: #f43f5e; }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 20px; align-items: flex-start; }
-      h1 { font-size: 2.2rem; }
-      .archive-card { padding: 20px; }
-      .archive-card h3 { font-size: 1.2rem; }
-    }
-  </style>
+    </script>
+
+    <style>
+        /* ============================================
+           BRUTALIST AVANT-GARDE — NEON-VOID THEME
+           Street Brutalist CSS DNA
+           ============================================ */
+
+        /* ---------- RESET & BASE ---------- */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            font-family: Impact, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            line-height: 1.3;
+            overflow-x: hidden;
+            max-width: none;
+            min-height: 100vh;
+        }
+
+        /* ---------- TYPOGRAPHY ---------- */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: Impact, system-ui, sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+
+        h1 {
+            font-size: clamp(3.5rem, 12vw, 6.5rem);
+            line-height: 0.9;
+            margin-bottom: 24px;
+            color: #ff3b00;
+            text-shadow: 4px 4px 0 #000, 8px 8px 0 rgba(255, 59, 0, 0.3);
+        }
+
+        h2 {
+            font-size: clamp(2.8rem, 8vw, 4.5rem);
+            line-height: 1.0;
+            margin-bottom: 32px;
+            border-left: 6px solid #ff3b00;
+            padding-left: 24px;
+        }
+
+        h3 {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            line-height: 1.1;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-size: 1.125rem;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            color: #cccccc;
+        }
+
+        a {
+            color: #ff3b00;
+            text-decoration: none;
+            border-bottom: 3px solid transparent;
+            transition: border-color 0.15s;
+        }
+        a:hover, a:focus {
+            border-bottom-color: #ff3b00;
+        }
+
+        strong, b {
+            color: #ffffff;
+            font-weight: 700;
+        }
+
+        small {
+            font-size: 0.875rem;
+            opacity: 0.7;
+        }
+
+        /* ---------- LAYOUT (airy space) ---------- */
+        .container {
+            padding: 72px;
+            max-width: 100%;
+        }
+
+        section {
+            padding: 72px;
+            margin-bottom: 120px;
+            position: relative;
+        }
+
+        .section-gap {
+            height: 120px;
+        }
+
+        /* full bleed helpers */
+        .full-bleed {
+            width: 100%;
+            max-width: none;
+        }
+
+        /* ---------- HEADER / NAV ---------- */
+        header {
+            background: #000;
+            border-bottom: 4px solid #ff3b00;
+            padding: 24px 72px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 2.2rem;
+            font-family: Impact, system-ui, sans-serif;
+            color: #ff3b00;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border: none;
+            line-height: 1;
+        }
+        .logo:hover {
+            border-bottom: none;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 48px;
+            align-items: center;
+        }
+
+        nav ul li a {
+            font-family: Impact, system-ui, sans-serif;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            color: #ffffff;
+            border-bottom: 3px solid transparent;
+            padding-bottom: 4px;
+            letter-spacing: 1px;
+        }
+        nav ul li a:hover {
+            color: #ff3b00;
+            border-bottom-color: #ff3b00;
+        }
+
+        .nav-cta {
+            background: #ff3b00;
+            color: #000 !important;
+            padding: 12px 28px !important;
+            border: 3px solid #ff3b00;
+            font-size: 1.2rem !important;
+            transform: rotate(-2deg);
+            transition: transform 0.2s;
+        }
+        .nav-cta:hover {
+            transform: rotate(0deg);
+            border-color: #fff;
+        }
+
+        /* 햄버거 (mobile) */
+        .hamburger {
+            display: none;
+            background: none;
+            border: 3px solid #ff3b00;
+            color: #ff3b00;
+            font-size: 2rem;
+            padding: 8px 16px;
+            cursor: pointer;
+            line-height: 1;
+        }
+
+        .nav-overlay {
+            display: none;
+        }
+
+        /* ---------- HERO ---------- */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 90vh;
+            padding: 72px;
+            border-bottom: 6px solid #ff3b00;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -20%;
+            right: -10%;
+            width: 50%;
+            height: 150%;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 40px,
+                rgba(255, 59, 0, 0.08) 40px,
+                rgba(255, 59, 0, 0.08) 80px
+            );
+            transform: skewX(-12deg);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 70%;
+        }
+
+        .hero h1 {
+            margin-bottom: 32px;
+        }
+
+        .hero-sub {
+            font-size: 1.8rem;
+            font-family: Impact, system-ui, sans-serif;
+            color: #ff3b00;
+            margin-bottom: 40px;
+            border: 4px solid #ff3b00;
+            display: inline-block;
+            padding: 16px 32px;
+            background: #000;
+            transform: rotate(-1deg);
+        }
+
+        .hero-meta {
+            display: flex;
+            gap: 64px;
+            font-family: system-ui, sans-serif;
+            font-size: 1.3rem;
+            border-left: 4px solid #ff3b00;
+            padding-left: 32px;
+        }
+
+        .hero-meta span {
+            color: #ffffff;
+        }
+        .hero-meta span strong {
+            color: #ff3b00;
+        }
+
+        .hero-cta {
+            display: inline-block;
+            margin-top: 48px;
+            background: #ff3b00;
+            color: #000;
+            padding: 24px 56px;
+            font-family: Impact, system-ui, sans-serif;
+            font-size: 2rem;
+            text-transform: uppercase;
+            border: 4px solid #ff3b00;
+            transform: rotate(1deg);
+            transition: all 0.15s;
+            letter-spacing: 2px;
+        }
+        .hero-cta:hover {
+            background: #000;
+            color: #ff3b00;
+            transform: rotate(-1deg);
+            border-color: #ff3b00;
+        }
+
+        /* ---------- ASYMMETRIC BLOCKS (features) ---------- */
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            margin-top: 60px;
+        }
+
+        .feature-block {
+            border: 4px solid #ffffff;
+            padding: 48px;
+            background: #0a0a0a;
+            transform: rotate(var(--rot, 0deg));
+            transition: transform 0.2s;
+        }
+        .feature-block:nth-child(odd) {
+            --rot: -1deg;
+        }
+        .feature-block:nth-child(even) {
+            --rot: 1.5deg;
+        }
+        .feature-block:hover {
+            transform: rotate(0deg);
+            border-color: #ff3b00;
+        }
+
+        .feature-block h3 {
+            color: #ff3b00;
+            margin-bottom: 16px;
+            font-size: 2rem;
+        }
+        .feature-block p {
+            font-size: 1rem;
+        }
+
+        /* ---------- REVIEWS (UGC cards) ---------- */
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 48px;
+            margin-top: 48px;
+        }
+
+        .review-card {
+            background: #111;
+            border: 4px solid #fff;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            position: relative;
+        }
+
+        .review-card::before {
+            content: '"';
+            font-family: Impact, system-ui, sans-serif;
+            font-size: 5rem;
+            color: #ff3b00;
+            position: absolute;
+            top: -10px;
+            left: 16px;
+            opacity: 0.4;
+            line-height: 1;
+        }
+
+        .review-card .stars {
+            color: #ff3b00;
+            font-size: 1.6rem;
+            letter-spacing: 4px;
+        }
+
+        .review-card blockquote {
+            font-family: system-ui, sans-serif;
+            font-size: 1.05rem;
+            line-height: 1.5;
+            font-style: normal;
+            color: #ddd;
+            border-left: 3px solid #ff3b00;
+            padding-left: 16px;
+            margin: 0;
+        }
+
+        .review-card .reviewer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: Impact, system-ui, sans-serif;
+            font-size: 1rem;
+            text-transform: uppercase;
+            color: #aaa;
+            border-top: 2px solid #333;
+            padding-top: 12px;
+            margin-top: auto;
+        }
+        .review-card .reviewer .name {
+            color: #ff3b00;
+        }
+        .review-card .reviewer .date {
+            font-family: system-ui, sans-serif;
+            font-size: 0.85rem;
+            color: #777;
+        }
+
+        /* ---------- ABOUT / DATA SECTION ---------- */
+        .data-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 48px;
+            border-top: 4px solid #ff3b00;
+            border-bottom: 4px solid #ff3b00;
+            padding: 72px 0;
+            margin: 48px 0;
+        }
+
+        .data-item {
+            text-align: center;
+            border-right: 3px solid #333;
+            padding: 0 32px;
+        }
+        .data-item:last-child {
+            border-right: none;
+        }
+        .data-item .number {
+            font-size: 4rem;
+            font-family: Impact, system-ui, sans-serif;
+            color: #ff3b00;
+            line-height: 1;
+            display: block;
+        }
+        .data-item .label {
+            font-family: system-ui, sans-serif;
+            font-size: 1.1rem;
+            color: #ccc;
+            margin-top: 8px;
+        }
+
+        /* ---------- CONTACT / CTA ---------- */
+        .cta-block {
+            background: #000;
+            border: 6px solid #ff3b00;
+            padding: 72px;
+            text-align: center;
+            transform: rotate(-0.5deg);
+            margin: 60px 0;
+        }
+        .cta-block h2 {
+            border-left: none;
+            padding-left: 0;
+            margin-bottom: 32px;
+        }
+        .cta-block .phone-big {
+            display: block;
+            font-size: 3.5rem;
+            font-family: Impact, system-ui, sans-serif;
+            color: #ff3b00;
+            letter-spacing: 4px;
+            border: 4px solid #ff3b00;
+            padding: 24px 48px;
+            background: #000;
+            margin: 32px auto;
+            width: fit-content;
+            transform: rotate(1deg);
+        }
+        .cta-block .phone-big a {
+            color: #ff3b00;
+            border: none;
+        }
+        .cta-block .phone-big a:hover {
+            color: #fff;
+        }
+
+        /* ---------- FOOTER ---------- */
+        footer {
+            border-top: 6px solid #ff3b00;
+            padding: 48px 72px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 24px;
+            background: #000;
+        }
+        footer .copyright {
+            font-family: system-ui, sans-serif;
+            font-size: 0.9rem;
+            color: #777;
+        }
+        footer .footer-links {
+            display: flex;
+            gap: 32px;
+            font-family: system-ui, sans-serif;
+            font-size: 0.9rem;
+        }
+        footer .footer-links a {
+            color: #aaa;
+            border-bottom: 2px solid transparent;
+        }
+        footer .footer-links a:hover {
+            color: #ff3b00;
+            border-bottom-color: #ff3b00;
+        }
+
+        /* ---------- RESPONSIVE (max-width:768px) ---------- */
+        @media (max-width: 768px) {
+            body {
+                font-size: 14px;
+            }
+
+            .container, section, header {
+                padding: 36px 24px !important;
+            }
+
+            .hero {
+                padding: 48px 24px !important;
+                min-height: 70vh;
+            }
+
+            .hero-content {
+                max-width: 100%;
+            }
+
+            h1 {
+                font-size: clamp(2.8rem, 15vw, 4rem);
+            }
+            h2 {
+                font-size: clamp(2rem, 8vw, 2.8rem);
+            }
+
+            .hero-meta {
+                flex-direction: column;
+                gap: 16px;
+                padding-left: 16px;
+            }
+
+            .hero-cta {
+                font-size: 1.4rem;
+                padding: 16px 32px;
+                transform: none;
+            }
+
+            /* 햄버거 메뉴 */
+            .hamburger {
+                display: block;
+            }
+
+            nav ul {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                background: #000;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 40px;
+                z-index: 999;
+                border: 6px solid #ff3b00;
+            }
+
+            nav ul.open {
+                display: flex;
+            }
+
+            nav ul li a {
+                font-size: 2rem;
+            }
+
+            .nav-cta {
+                font-size: 2rem !important;
+                padding: 16px 48px !important;
+                transform: none;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .feature-block {
+                transform: none !important;
+                padding: 32px;
+            }
+
+            .data-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+                padding: 36px 0;
+            }
+            .data-item {
+                border-right: none;
+                border-bottom: 3px solid #333;
+                padding: 16px 0;
+            }
+            .data-item:last-child {
+                border-bottom: none;
+            }
+
+            .cta-block {
+                padding: 36px 24px;
+                transform: none;
+            }
+            .cta-block .phone-big {
+                font-size: 2rem;
+                padding: 16px 24px;
+                transform: none;
+                width: 100%;
+            }
+
+            .reviews-grid {
+                gap: 32px;
+            }
+
+            footer {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 24px !important;
+                gap: 16px;
+            }
+        }
+
+        /* ---------- 오버레이 토글 ---------- */
+        .nav-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.7);
+            z-index: 998;
+        }
+        .nav-overlay.active {
+            display: block;
+        }
+
+        /* 기타 raw 디테일 */
+        hr {
+            border: none;
+            border-top: 4px solid #ff3b00;
+            margin: 48px 0;
+        }
+
+        ::selection {
+            background: #ff3b00;
+            color: #000;
+        }
+
+        /* micro interactions */
+        .skew-badge {
+            display: inline-block;
+            background: #ff3b00;
+            color: #000;
+            padding: 8px 24px;
+            font-family: Impact, system-ui, sans-serif;
+            transform: skewX(-8deg);
+            margin-bottom: 24px;
+        }
+    </style>
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-      <a href="/" class="brand">STREET.KR</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="label">// BRUTALIST GRID SYSTEM</div>
-      <h1>애니 매니아 지식 저널 및 아카이브</h1>
-      <div class="article-body">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>애니 매니아</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="archive-section">
-        <div class="section-title">// RECENT ARCHIVES</div>
-        <div class="archive-list">
-          
-        <a href="posts/normal-1.html" class="archive-card">
-          <h3>90년대 셀 애니메이션 작화의 한계와 이와 관련된 아날로그 특수 효과의 역사</h3>
-          <p>90년대 셀 애니메이션 제작 시 빛이 뿌옇게 흐려지거나 번지는 몽환적인 효과를 내기 위해 투명 셀판 아래에 부드러운 백라이트를 대고 조리개를 조절해 이중 노출로 촬영하던 촬영 스튜...</p>
-        </a>
-      
 
-        <a href="posts/normal-2.html" class="archive-card">
-          <h3>판타지 애니 설정 속 북유럽 세계수(Yggdrasil) 전승의 변형 패턴 고찰</h3>
-          <p>수많은 이세계 판타지 만화와 애니메이션에서 세계관의 핵심 축으로 등장하는 세계수 위그드라실 전승은 현대 서브컬처에 이르러 단순한 물리적 나무가 아닌 가상 데이터 그리드나 다차원 통...</p>
-        </a>
-      
+<header>
+    <a href="/" class="logo">T1 공덕</a>
+    <button class="hamburger" aria-label="메뉴 열기" onclick="toggleNav()">☰</button>
+    <nav>
+        <ul id="mainNav">
+            <li><a href="#about">소개</a></li>
+            <li><a href="#features">시설</a></li>
+            <li><a href="#reviews">리뷰</a></li>
+            <li><a href="#contact" class="nav-cta">예약하기</a></li>
+        </ul>
+    </nav>
+    <div class="nav-overlay" id="navOverlay" onclick="toggleNav()"></div>
+</header>
 
-        <a href="posts/normal-3.html" class="archive-card">
-          <h3>전설적인 애니메이터들의 타이밍 미학: 리미티드 3코마 작화법의 운동학</h3>
-          <p>디즈니의 풀 애니메이션(초당 24장)에 대비되는 동양 리미티드 애니메이션의 정수인 3코마 작화법(초당 8장 기법)은 프레임의 부족함을 독창적인 프레임 홀드 타이밍과 과장된 정지 컷...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="archive-card">
-          <h3>애니 작화 마니아들이 강력히 추천하는 화곡 셔츠룸 스페셜 아카이브</h3>
-          <p>깊이 있는 셀 애니메이션 작화의 연출 철학과 세계수의 역사적 서사 설정을 분석하며 지적인 마니아적 안목을 키워가다 보면, 지친 정신에 활기를 불어넣고 쾌적한 오프라인 라이프 쉼터를...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="archive-card">
-          <h3>애니 작화 마니아들이 강력히 추천하는 화곡 셔츠룸 스페셜 아카이브</h3>
-          <p>깊이 있는 셀 애니메이션 작화의 연출 철학과 세계수의 역사적 서사 설정을 분석하며 지적인 마니아적 안목을 키워가다 보면, 지친 정신에 활기를 불어넣고 쾌적한 오프라인 라이프 쉼터를...</p>
-        </a>
-      
+<main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>공덕<br>노래방<br>예약</h1>
+            <div class="hero-sub">★★★★★ 4.8 · 247 평가</div>
+            <div class="hero-meta">
+                <span><strong>위치</strong> 공덕역 3번 출구 1분</span>
+                <span><strong>운영</strong> 365일 24시간</span>
+                <span><strong>상담</strong> 010-6279-0862</span>
+            </div>
+            <a href="tel:010-6279-0862" class="hero-cta">즉시 예약 ▸</a>
         </div>
-      </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 STREET.KR. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
-      </div>
-    </footer>
-  </div>
+    </section>
+
+    <!-- ABOUT / 데이터 섹션 -->
+    <section id="about">
+        <h2>왜 공덕 No.1 노래방인가</h2>
+        <p style="max-width: 800px;">공덕 상
 </body>
 </html>
