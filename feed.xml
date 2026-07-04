@@ -1,41 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title><![CDATA[노래방]]></title>
-  <link>https://mqlwmsltm-arch.github.io/bp-t3b02-gd-kb-rsv</link>
-  <description><![CDATA[노래방 - 공덕 노래방 예약 관련 최신 소식 및 가이드]]></description>
-  <language>ko</language>
-  <pubDate>Wed, 10 Jun 2026 20:48:26 GMT</pubDate>
-  <lastBuildDate>Wed, 10 Jun 2026 20:48:26 GMT</lastBuildDate>
-  <atom:link href="https://mqlwmsltm-arch.github.io/bp-t3b02-gd-kb-rsv/feed.xml" rel="self" type="application/rss+xml" />
+  <title><![CDATA[공덕 공덕 노래방 예약]]></title>
+  <link>https://t3b02-gd-kb-rsv.pages.dev</link>
+  <description><![CDATA[공덕 노래방 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
+  <language>ko-KR</language>
+  <pubDate>Thu, 28 May 2026 13:58:36 GMT</pubDate>
+  <lastBuildDate>Thu, 28 May 2026 13:58:36 GMT</lastBuildDate>
+  <atom:link href="https://t3b02-gd-kb-rsv.pages.dev/feed.xml" rel="self" type="application/rss+xml" />
   
     <item>
-      <title><![CDATA[글룸헤이븐 1판 vs 2판: 7개 클래스 카드 밸런스 조정, 비효율적 설계 교정 보고서]]></title>
-      <link>https://mqlwmsltm-arch.github.io/bp-t3b02-gd-kb-rsv/posts/guide-003.html</link>
-      <guid isPermaLink="true">https://mqlwmsltm-arch.github.io/bp-t3b02-gd-kb-rsv/posts/guide-003.html</guid>
-      <description><![CDATA[글룸헤이븐 1판과 2판 사이의 클래스 카드 변경점은 단순한 수치 조정 이상이다. 이는 근본적인 설계 결함과 메타게임의 비효율성을 교정하려는 시도였다. 특히 7종의 카드에서 드러난 스탯 변화와 밸런스 조정 이유는 게임의 전술적 깊이와 코너케이스 판정법에 지대한 영향을 미]]></description>
-      <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[비너스 팽창, 2인플 밸런스 붕괴? 테라포밍 마스 뇌절 분석]]></title>
-      <link>https://mqlwmsltm-arch.github.io/bp-t3b02-gd-kb-rsv/posts/review-001.html</link>
-      <guid isPermaLink="true">https://mqlwmsltm-arch.github.io/bp-t3b02-gd-kb-rsv/posts/review-001.html</guid>
-      <description><![CDATA[terraforming mars, venus, expansion, board game, tabletop game, strategy game, game analysis, rule dispute, player interaction, game balance, 2 player]]></description>
-      <pubDate>Fri, 05 Jun 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[공덕 노래방 예약 솔직 후기 — 3개월 써본 사람의 리얼 리뷰]]></title>
-      <link>https://mqlwmsltm-arch.github.io/bp-t3b02-gd-kb-rsv/posts/review-002-tln4zc.html</link>
-      <guid isPermaLink="true">https://mqlwmsltm-arch.github.io/bp-t3b02-gd-kb-rsv/posts/review-002-tln4zc.html</guid>
-      <description><![CDATA[제목: 창작한 제목 | The Hidden Frames Before Tylor Detone’s Emergence ### 소제목- Cold-Open Case: 3 Essential Scenes Unveiled- Decoding Director's Intentions: I]]></description>
-      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[월 3천만원 매출? 공덕 룸싸롱 A씨, 6개월 만에 &#39;이것&#39; 때문에 접었다]]></title>
-      <link>https://mqlwmsltm-arch.github.io/bp-t3b02-gd-kb-rsv/posts/review-002.html</link>
-      <guid isPermaLink="true">https://mqlwmsltm-arch.github.io/bp-t3b02-gd-kb-rsv/posts/review-002.html</guid>
-      <description><![CDATA[1girl, solo, looking_at_viewer, detailed_background, city, night, neon_signs, street_food, empty_street, abandoned_shopfront, closed_sign, shuttered, ]]></description>
-      <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+      <title><![CDATA[공덕 공덕 노래방 예약 - 공식 홈페이지 오픈 안내]]></title>
+      <link>https://t3b02-gd-kb-rsv.pages.dev/</link>
+      <guid isPermaLink="true">https://t3b02-gd-kb-rsv.pages.dev/</guid>
+      <description><![CDATA[공덕 노래방 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
+      <pubDate>Thu, 28 May 2026 13:58:36 GMT</pubDate>
     </item>
 </channel>
 </rss>
